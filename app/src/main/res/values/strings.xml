@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ExampleAppKD</string>
+    <string name="input_hint">Type a task…</string>
+    <string name="filter_done">Completed</string>
+    <string name="filter_progress">In progress</string>
+    <string name="name_header" translatable="false">ToDo Tasks</string>
+    <string name="btn_add" translatable="false">+</string>
+    <string name="btn_help" translatable="false">\?</string>
+
+    <string name="task_1">Task #1</string>
+    <string name="task_2">Task #2</string>
+    <string name="task_3">Task #3</string>
+    <string name="task_4">Task #4</string>
+    <string name="task_5">Task #5</string>
+    <string name="task_6">Task #6</string>
+    <string name="task_7">Task #7</string>
+</resources>

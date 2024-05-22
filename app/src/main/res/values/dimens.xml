@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tasks_heightAll">448.0dp</dimen>
+    <dimen name="tasks_widthAll">344.0dp</dimen>
+    <dimen name="tasks_marginButton">8.0dp</dimen>
+    <dimen name="tasks_textSize">16.0sp</dimen>
+    <dimen name="tasks_width">272.0dp</dimen>
+    <dimen name="tasks_height">64.0dp</dimen>
+    <dimen name="tasks_imageWidth">32.0dp</dimen>
+
+    <dimen name="header_textSize">24.0sp</dimen>
+
+    <dimen name="switch_textSize">20.0sp</dimen>
+    <dimen name="switch_paddingLeft">5.0dp</dimen>
+
+    <dimen name="btn_marginEnd">10.0dp</dimen>
+    <dimen name="btn_width">64.0dp</dimen>
+
+    <dimen name="input_marginEnd">20.0dp</dimen>
+    <dimen name="input_marginVertical">5.0dp</dimen>
+</resources>

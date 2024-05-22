@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ExampleAppKD</string>
+    <string name="input_hint">Введите задачу…</string>
+    <string name="filter_done">Завершено</string>
+    <string name="filter_progress">В процессе</string>
+    <string name="task_1">Задача #1</string>
+    <string name="task_2">Задача #2</string>
+    <string name="task_3">Задача #3</string>
+    <string name="task_4">Задача #4</string>
+    <string name="task_5">Задача #5</string>
+    <string name="task_6">Задача #6</string>
+    <string name="task_7">Задача #7</string>
+</resources>

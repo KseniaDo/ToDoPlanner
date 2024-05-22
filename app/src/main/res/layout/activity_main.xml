@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundWhite"
+    android:backgroundTint="@color/backgroundWhite"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundWhite"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/headertext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="209dp"
+            android:layout_height="match_parent"
+            android:baselineAligned="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="186dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/input_marginVertical"
+                android:layout_marginEnd="@dimen/input_marginEnd"
+                android:hint="@string/input_hint"
+                android:textStyle="italic"
+                android:textColor="@color/textAll"
+                android:textColorHint="@color/textAll"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonadd"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/btn_marginEnd"
+            android:background="@color/btn_color"
+            android:text="@string/btn_add" />
+
+        <Button
+            android:id="@+id/buttonquest"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/btn_marginEnd"
+            android:text="@string/btn_help"
+            android:background="@color/btn_color" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/headertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundWhite"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/name_header"
+        android:textColor="@color/purplStroke"
+        android:textSize="@dimen/header_textSize"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal|start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.278" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="@dimen/tasks_widthAll"
+        android:layout_height="@dimen/tasks_heightAll"
+        android:background="@color/backgroundWhite"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headertext"
+        app:layout_constraintVertical_bias="0.444">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="@dimen/tasks_width"
+                    android:layout_height="@dimen/tasks_height"
+                    android:layout_marginBottom="@dimen/tasks_marginButton"
+                    android:background="@color/progressTask"
+                    android:checked="false"
+                    android:text="@string/task_1"
+                    android:textSize="@dimen/tasks_textSize"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageSuccess1"
+                    android:layout_width="@dimen/tasks_imageWidth"
+                    android:layout_height="@dimen/tasks_imageWidth"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/trophy_24"
+                    app:tint="@color/textAll" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="@dimen/tasks_width"
+                    android:layout_height="@dimen/tasks_height"
+                    android:layout_marginBottom="@dimen/tasks_marginButton"
+                    android:background="@color/progressTask"
+                    android:text="@string/task_2"
+                    android:textSize="@dimen/tasks_textSize"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageSuccess2"
+                    android:layout_width="@dimen/tasks_imageWidth"
+                    android:layout_height="@dimen/tasks_imageWidth"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    app:tint="@color/textAll"
+                    app:srcCompat="@drawable/trophy_24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="@dimen/tasks_width"
+                    android:layout_height="@dimen/tasks_height"
+                    android:layout_marginBottom="@dimen/tasks_marginButton"
+                    android:background="@color/progressTask"
+                    android:text="@string/task_3"
+                    android:textSize="@dimen/tasks_textSize"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageSuccess3"
+                    android:layout_width="@dimen/tasks_imageWidth"
+                    android:layout_height="@dimen/tasks_imageWidth"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    app:tint="@color/textAll"
+                    app:srcCompat="@drawable/trophy_24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox4"
+                    android:layout_width="@dimen/tasks_width"
+                    android:layout_height="@dimen/tasks_height"
+                    android:layout_marginBottom="@dimen/tasks_marginButton"
+                    android:background="@color/progressTask"
+                    android:text="@string/task_4"
+                    android:textSize="@dimen/tasks_textSize"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageSuccess4"
+                    android:layout_width="@dimen/tasks_imageWidth"
+                    android:layout_height="@dimen/tasks_imageWidth"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    app:tint="@color/textAll"
+                    app:srcCompat="@drawable/trophy_24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox5"
+                    android:layout_width="@dimen/tasks_width"
+                    android:layout_height="@dimen/tasks_height"
+                    android:layout_marginBottom="@dimen/tasks_marginButton"
+                    android:background="@color/progressTask"
+                    android:text="@string/task_5"
+                    android:textSize="@dimen/tasks_textSize"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageSuccess5"
+                    android:layout_width="@dimen/tasks_imageWidth"
+                    android:layout_height="@dimen/tasks_imageWidth"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    app:tint="@color/textAll"
+                    app:srcCompat="@drawable/trophy_24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox6"
+                    android:layout_width="@dimen/tasks_width"
+                    android:layout_height="@dimen/tasks_height"
+                    android:layout_marginBottom="@dimen/tasks_marginButton"
+                    android:background="@color/progressTask"
+                    android:text="@string/task_6"
+                    android:textSize="@dimen/tasks_textSize"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageSuccess6"
+                    android:layout_width="@dimen/tasks_imageWidth"
+                    android:layout_height="@dimen/tasks_imageWidth"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    app:tint="@color/textAll"
+                    app:srcCompat="@drawable/trophy_24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox7"
+                    android:layout_width="@dimen/tasks_width"
+                    android:layout_height="@dimen/tasks_height"
+                    android:layout_marginBottom="@dimen/tasks_marginButton"
+                    android:background="@color/progressTask"
+                    android:text="@string/task_7"
+                    android:textSize="@dimen/tasks_textSize"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageSuccess7"
+                    android:layout_width="@dimen/tasks_imageWidth"
+                    android:layout_height="@dimen/tasks_imageWidth"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    app:tint="@color/textAll"
+                    app:srcCompat="@drawable/trophy_24" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/heart" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="344dp"
+        android:layout_height="100dp"
+        android:background="@color/backgroundWhite"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/headertext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.318">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|start">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/baseline_done_24"
+                app:tint="@color/textAll" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:paddingLeft="@dimen/switch_paddingLeft"
+                android:text="@string/filter_done"
+                android:textSize="@dimen/switch_textSize"
+                android:textStyle="bold"
+                android:textColor="@color/textAll"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|start" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/pending_actions_24"
+                app:tint="@color/textAll" />
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/switch_paddingLeft"
+                android:text="@string/filter_progress"
+                android:textSize="@dimen/switch_textSize"
+                android:textStyle="bold"
+                android:textColor="@color/textAll"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

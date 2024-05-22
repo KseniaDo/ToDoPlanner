@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mainColor">#A3B57AEA</color>
+    <color name="backgroundWhite">#F4F4F4</color>
+    <color name="backAll">#7822C3</color>
+    <color name="purplStroke">#FF9C6CC6</color>
+    <color name="btn_color">#FF9C6CC6</color>
+    <color name="progressTask">#A3B57AEA</color>
+    <color name="doneTask">#CDCDCD</color>
+    <color name="textAll">#1B1B1B</color>
+</resources>
